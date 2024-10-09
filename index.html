@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofill Jobs Extension Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Autofill Jobs Chrome Extension</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#instructions">Instructions</a></li>
+                <li><a href="#report">Report a Bug</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Autofill Jobs Extension Testing!</h2>
+        <p>This site will help you explore our product, identify any issues, and report them to improve our service.</p>
+        <a href="https://AutofillJobs.com/download" class="button" target="_blank">Download Chrome Extension</a>
+        <a href="https://forms.gle/wC2DE2mf8BupoMro7" class="button" target="_blank">Fill the form</a>
+    </section>
+
+    <!-- Instructions Section -->
+    <section id="instructions">
+        <h2>How to Test the Extension</h2>
+        <ol>
+            <li>Download and install the Autofill Jobs Chrome extension from <a href="https://AutofillJobs.com/download" target="_blank">AutofillJobs.com</a>.</li>
+            <li>Navigate to different job application websites and try using the extension.</li>
+            <li>Look for any issues such as form fields not being filled, incorrect data, or extension crashes.</li>
+            <li>Once you identify an issue, take note of it and proceed to the bug report section below.</li>
+        </ol>
+    </section>
+
+    <!-- Bug Report Form -->
+    <section id="report">
+        <h2>Report a Bug</h2>
+        <form id="bugForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="bug-title">Bug Title:</label>
+            <input type="text" id="bug-title" name="bug_title" required>
+
+            <label for="description">Description of the Bug:</label>
+            <textarea id="description" name="description" rows="6" required></textarea>
+
+            <label for="steps">Steps to Reproduce:</label>
+            <textarea id="steps" name="steps" rows="6" required></textarea>
+
+            <!-- Automatically Detected Fields -->
+            <label for="browser">Browser Version:</label>
+            <input type="text" id="browser" name="browser" readonly>
+
+            <label for="os">Operating System:</label>
+            <input type="text" id="os" name="os" readonly>
+
+            <button type="submit" class="button">Submit Bug Report</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Autofill Jobs. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
